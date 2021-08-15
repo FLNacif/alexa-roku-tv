@@ -10,7 +10,7 @@ This project DON'T:
 - Use Alexa Smart Home Skill
 - Do IP/MAC configuration
 
-If you wan't to use, configure the MAC addres to perform wake on lan, assign and configure a reserved IP for your TV.
+If you wan't to use this application as is, configure the MAC address (used to perform Wake On Lan) and configure a reserved IP for your TV on source code.
 
 ## Architecture
 
@@ -36,5 +36,5 @@ to start application.
 ## Need help?
 Open an issue and I will try to help you, but I am a newbie either.
 
-## Wanna help?
+## Want to help me?
 Feel free to contribute, or just make a fork.
