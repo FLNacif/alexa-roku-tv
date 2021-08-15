@@ -1,0 +1,226 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "roku tv",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TurnOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "Ligar"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TurnOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "desligar"
+                    ]
+                },
+                {
+                    "name": "OpenAppIntent",
+                    "slots": [
+                        {
+                            "name": "app",
+                            "type": "RokuApp",
+                            "samples": [
+                                "{app}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "no {app}",
+                        "na {app}",
+                        "abre {app}",
+                        "{app}",
+                        "abrir {app}"
+                    ]
+                },
+                {
+                    "name": "VolumeUpIntent",
+                    "slots": [
+                        {
+                            "name": "quantidade",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "subir o volume",
+                        "subir o som",
+                        "subir o som {quantidade} vezes",
+                        "subir o volume {quantidade} vezes",
+                        "aumentar o som {quantidade} vezes",
+                        "aumentar o volume {quantidade} vezes",
+                        "aumentar o som em {quantidade}",
+                        "aumentar o som",
+                        "aumentar volume",
+                        "aumentar o volume em {quantidade}"
+                    ]
+                },
+                {
+                    "name": "VolumeDownIntent",
+                    "slots": [
+                        {
+                            "name": "quantidade",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "diminuir o volume {quantidade} vezes",
+                        "abaixar o volume {quantidade} vezes",
+                        "dimiuir o som {quantidade} vezes",
+                        "abaixar o som {quantidade} vezes",
+                        "abaixar o volume",
+                        "abaixar o som",
+                        "abaixar o som em {quantidade}",
+                        "abaixar o volume em {quantidade}",
+                        "diminuir o volume em {quantidade}",
+                        "dimiuir o som em {quantidade}",
+                        "dimiuir o som",
+                        "diminuir o volume"
+                    ]
+                },
+                {
+                    "name": "VolumeMuteIntent",
+                    "slots": [],
+                    "samples": [
+                        "voltar com o som",
+                        "desmutar",
+                        "silenciar",
+                        "mutar"
+                    ]
+                },
+                {
+                    "name": "ChangeHDMIIntent",
+                    "slots": [
+                        {
+                            "name": "channel",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "mudar para o HDMI {channel}",
+                        "HDMI {channel}",
+                        "alterar para o HDMI {channel}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "RokuApp",
+                    "values": [
+                        {
+                            "id": "837",
+                            "name": {
+                                "value": "Youtube"
+                            }
+                        },
+                        {
+                            "id": "291097",
+                            "name": {
+                                "value": "Disney Plus",
+                                "synonyms": [
+                                    "Disney"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "19977",
+                            "name": {
+                                "value": "Spotify",
+                                "synonyms": [
+                                    "Música"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "13",
+                            "name": {
+                                "value": "Prime video",
+                                "synonyms": [
+                                    "Prime"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "564736",
+                            "name": {
+                                "value": "Globo play",
+                                "synonyms": [
+                                    "Globo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "61322",
+                            "name": {
+                                "value": "HBO Max",
+                                "synonyms": [
+                                    "HBO"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "12",
+                            "name": {
+                                "value": "Netflix"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "OpenAppIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "app",
+                            "type": "RokuApp",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1599815909305.67017557328"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1599815909305.67017557328",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Não entendi o app, pode repetir?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Desculpe, qual app devo abrir?"
+                    }
+                ]
+            }
+        ]
+    }
+}
