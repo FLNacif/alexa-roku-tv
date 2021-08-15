@@ -1,0 +1,16 @@
+{
+  "name": "alexa-roku-controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.26.0",
+    "node-wol": "^0.1.1",
+    "uuid": "^8.3.2"
+  }
+}
