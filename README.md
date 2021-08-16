@@ -14,7 +14,7 @@ If you wan't to use this application as is, configure the MAC address (used to p
 
 ## Architecture
 
-As the main goal was to keep it simple, we use a queue (AWS SQS) to integrate Alexa-lambda to my home network through the 'HUB' (just a pooling appication).
+As the main goal was to keep it simple, we use a queue (AWS SQS) to integrate Alexa-lambda to my home network through the 'HUB' (just a pooling application).
 
 This HUB is responsible to pool the queue and then translate the command to the necesary requests.
 
