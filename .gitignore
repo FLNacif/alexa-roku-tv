@@ -105,5 +105,4 @@ dist
 
 
 # Project ignore
-hub/sc.py
-hub/roku-commands.txt
+roku-commands.txt
